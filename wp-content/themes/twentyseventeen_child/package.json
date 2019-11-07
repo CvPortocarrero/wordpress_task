@@ -4,11 +4,10 @@
   "description": "none",
   "repository": "",
   "license": "",
-  "dependencies": {
-    "gulp": "^3.9.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "del": "^3.0.0",
+    "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.1.0",
     "gulp-concat": "^2.6.1",
     "gulp-postcss": "^7.0.1",
@@ -21,7 +20,7 @@
     "source-map": "^0.7.0"
   },
   "scripts": {
-	"gulp": "gulp",
-	"gulp-tasks": "gulp --tasks"
+    "gulp": "gulp",
+    "gulp-tasks": "gulp --tasks"
   }
 }
