@@ -28,3 +28,16 @@
   @extend %action-button;
   display: block;
 }
+
+
+// mixing for links
+$a-tags: 'a, a:active, a:hover, a:visited';
+$a-tags-hover: 'a:active, a:hover';
+ 
+#{$a-tags} {
+  color: red;
+  text-decoration: none;
+}
+#{$a-tags-hover} {
+  color: blue;
+}

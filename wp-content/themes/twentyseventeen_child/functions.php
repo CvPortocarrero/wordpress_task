@@ -11,8 +11,11 @@ function enqueue_styles_child_theme() {
 				get_stylesheet_directory_uri() . '/style.css',
 				array( $parent_style ),
 				wp_get_theme()->get('Version')
-				);
+				);			
 				
-		
+				//enqueue local css
+				wp_enqueue_style( 'main', get_template_directory_uri() . '/twentyseventee_child/sources/scss/main.scss',false,'1.1','all');
 }
+
 add_action( 'wp_enqueue_scripts', 'enqueue_styles_child_theme' );
+
