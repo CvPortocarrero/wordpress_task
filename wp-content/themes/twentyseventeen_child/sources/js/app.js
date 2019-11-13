@@ -1,16 +1,15 @@
-(function($){
-    $(function(){
-        print_hello_user();
-    });
+const url = 'assets/js/app.js'
 
-    function print_hello_user() {
-        $.ajax({
-            type: "GET",
-            url: theme_vars.template_uri + "/users.json",
-            beforeSend: function() {
-                console.log( 'Loading...' );
-            }
-        })
-            .done();
-    }
-})(jQuery);
+fetch(url)
+.then(response => response.json())
+.then(data => {
+    let element = document.getElementById("elemento")
+    element.innerHTML = `
+    <p>${data.order}</p>
+    <p>${data.name}</p>
+    <img src="${data.sprites.front_default}"/>
+    `;
+
+    console.log(data)
+})
+.catch(err => console.log(err))

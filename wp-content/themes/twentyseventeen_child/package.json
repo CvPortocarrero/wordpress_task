@@ -4,7 +4,9 @@
   "description": "none",
   "repository": "",
   "license": "",
-  "dependencies": {},
+  "dependencies": {
+    "jquery": "^3.4.1"
+  },
   "devDependencies": {
     "del": "^3.0.0",
     "gulp": "^3.9.1",
